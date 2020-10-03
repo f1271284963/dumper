@@ -1,0 +1,19 @@
+Class name: Laptop
+
+Parent class (if any): None
+
+Subclasses (if any): None
+
+Responsibilities:
+-Start up when turned on
+-Shut down when turned off
+
+-Processes data from peripheral devices
+-Processes data for output devices
+
+Collaborators:
+-Webcam 
+-Keyboard
+-TouchPad
+-Microphone
+-External Mouse

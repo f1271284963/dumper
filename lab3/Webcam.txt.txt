@@ -1,0 +1,11 @@
+Class name: Webcam
+
+Parent class (if any): Peripheral Device
+
+Subclasses (if any): None
+
+Responsibilities:
+-Captures natural enviornment as image data and sends it to the laptop.
+
+Collaborators:
+

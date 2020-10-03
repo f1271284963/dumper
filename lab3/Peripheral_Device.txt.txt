@@ -1,0 +1,11 @@
+Class name: Peripheral Device
+
+Parent class (if any): None
+
+Subclasses (if any): Microphone, Webcam, Touchpad, Keyboard, Mouse
+
+Responsibilities:
+- Connects to the computer in some way and provides information for the computer to process.
+
+Collaborators:
+

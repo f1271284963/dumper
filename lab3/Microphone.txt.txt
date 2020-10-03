@@ -1,0 +1,11 @@
+Class name: Microphone
+
+Parent class (if any): Peripheral Device
+
+Subclasses (if any): None
+
+Responsibilities:
+-Converts sound into binary data
+
+Collaborators:
+

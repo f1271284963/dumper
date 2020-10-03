@@ -1,0 +1,10 @@
+Class name: External Mouse
+
+Parent class (if any): Peripheral Device
+
+Subclasses (if any): None
+
+Responsibilities:
+-Sends physical input as binary data to the laptop
+
+Collaborators:

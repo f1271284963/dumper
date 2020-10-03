@@ -1,0 +1,11 @@
+Class name: Output Device
+
+Parent class (if any): None
+
+Subclasses (if any): Ports, Output Screen
+
+Responsibilities:
+- Connects to the computer in some way and uses information provided by the computer to do things.
+
+Collaborators:
+

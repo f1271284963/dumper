@@ -1,0 +1,12 @@
+Class name: Output Screen
+
+Parent class (if any): Output Device
+
+Subclasses (if any): None
+
+Responsibilities:
+- Converts data into visual information to be viewed by a user.
+
+Collaborators:
+-Laptop
+

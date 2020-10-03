@@ -1,0 +1,11 @@
+Class name: VGA Output
+
+Parent class (if any): Ports
+
+Subclasses (if any): None
+
+Responsibilities:
+-Sends binary data from the laptop to another source
+
+Collaborators:
+-Laptop

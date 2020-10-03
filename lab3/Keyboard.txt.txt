@@ -1,0 +1,11 @@
+Class name: Keyboard
+
+Parent class (if any): Peripheral Device
+
+Subclasses (if any): None
+
+Responsibilities:
+-Converts user input into binary data
+
+Collaborators:
+

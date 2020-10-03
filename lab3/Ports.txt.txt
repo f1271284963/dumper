@@ -1,0 +1,11 @@
+Class name: Ports
+
+Parent class (if any): Output Device
+
+Subclasses (if any): VGA Output, HDMI Output
+
+Responsibilities:
+- Allows other devices to use the information provided by the computer.
+
+Collaborators:
+
