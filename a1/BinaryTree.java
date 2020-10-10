@@ -1,6 +1,8 @@
 package a1;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 import java.util.LinkedList;
+import java.util.Queue;
 // **********************************************************
 // Assignment1:
 // Student1:
@@ -9,9 +11,9 @@ import java.util.LinkedList;
 // Author: Andrey Zhuravlev
 //
 // Student2:
-// UTORID user_name:
-// UT Student #:
-// Author:
+// UTORID user_name: kongsu
+// UT Student #: 1004304790
+// Author: Kong Su Tong
 //
 //
 // Honor Code: I pledge that this program represents my own
@@ -92,8 +94,44 @@ public class BinaryTree {
 		/*
 		 * Do not use recursion for this method
 		 */
+		if (root == null)
+			return "";
 		
-		return null; //added this to remove the compile time error in starter code. 
+		Queue<Node> queue = new LinkedList<Node>();
+		Node node;
+		
+		ArrayList values = new ArrayList();
+		
+		String croppedString;
+		String delim = " ";
+		int nodeCount;
+		
+		queue.add(root);
+		
+		while(true) {
+			nodeCount = queue.size();
+			if(nodeCount == 0)
+				break;
+			
+			while(nodeCount > 0) {
+				node = queue.peek();
+				values.add(node.getData());
+				
+				queue.remove();
+				if(node.getLeftNode() != null)
+					queue.add(node.getLeftNode());
+				if(node.getRightNode() != null)
+					queue.add(node.getRightNode());
+				nodeCount--;
+			}
+		}
+		
+		
+		croppedString = (String) values.stream()
+										.map(Object::toString)
+										.collect(Collectors.joining(delim));
+		
+		return croppedString;
 	}
 	
 	/*
@@ -162,8 +200,8 @@ public class BinaryTree {
 		bt.addData(6);
 		bt.addData(7);
 		
-		System.out.println(bt); //must print 1 2 3 4 5 6 7 
-		System.out.println(bt.toList());
+		System.out.println("tree: " + bt + "\n"); //must print 1 2 3 4 5 6 7 
+		System.out.println("toList: " + bt.toList() + "\n");
 		
 		/*
 		 * Printing the list of the binary
